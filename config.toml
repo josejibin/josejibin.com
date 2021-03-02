@@ -1,0 +1,64 @@
+baseURL = "https://josejibin.com/"
+languageCode = "en-us"
+title = "Jibin Jose"
+theme = "bodhi"
+googleAnalytics = "xxxx"
+
+[params]
+    subtitle = ""
+    avatar = "/images/jj-icon.png"
+    author = "JJ"
+    commentoSrc = "https://commento.myselfhostedinstance.net/js/commento.js"
+    footerMessage = ""
+
+
+[[params.social]]
+name = "Github"
+icon = "github"
+url = "https://github.com/josejibin"
+
+
+[[menu.main]]
+name = "home"
+url = "/"
+weight = 1
+
+[[menu.main_right]]
+name = "contact"
+url = "/contact/"
+weight = 1
+
+[[menu.nav]]
+name = "projects"
+url = "/projects"
+weight = 2
+
+
+[[menu.nav]]
+name = "blogs"
+url = "/blog"
+weight = 1
+
+[[menu.nav]]
+parent = "blogs"
+name = "archive"
+url = "/archive"
+weight = 1
+
+[markup.goldmark.renderer]
+unsafe= true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params.fathomAnalytics]
+    siteID = "XXXXX"
+    serverURL = "https://fathom.myselfhostedinstance.net"
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNoStart = 1
+    noClasses = false
+    tabWidth = 4
